@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A54B05B224DBD9C9008618BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54B05B124DBD9C9008618BD /* AppDelegate.swift */; };
+		A54B05B424DBD9C9008618BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54B05B324DBD9C9008618BD /* SceneDelegate.swift */; };
+		A54B05B624DBD9C9008618BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54B05B524DBD9C9008618BD /* ViewController.swift */; };
+		A54B05B924DBD9C9008618BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54B05B724DBD9C9008618BD /* Main.storyboard */; };
+		A54B05BB24DBD9CA008618BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54B05BA24DBD9CA008618BD /* Assets.xcassets */; };
+		A54B05BE24DBD9CA008618BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54B05BC24DBD9CA008618BD /* LaunchScreen.storyboard */; };
+		A54B05CB24DBDA49008618BD /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = A54B05CA24DBDA49008618BD /* DaumMap.embeddedframework */; };
+		A54B05CE24DBDA56008618BD /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05CD24DBDA56008618BD /* DaumMap.framework */; };
+		A54B05CF24DBDA56008618BD /* DaumMap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05CD24DBDA56008618BD /* DaumMap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A54B05D224DBDB11008618BD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05D124DBDB11008618BD /* OpenGLES.framework */; };
+		A54B05D424DBDB18008618BD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05D324DBDB18008618BD /* SystemConfiguration.framework */; };
+		A54B05D624DBDB20008618BD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05D524DBDB20008618BD /* CoreLocation.framework */; };
+		A54B05D824DBDB28008618BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05D724DBDB28008618BD /* QuartzCore.framework */; };
+		A54B05DA24DBDB36008618BD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05D924DBDB36008618BD /* libc++.tbd */; };
+		A54B05DC24DBDB40008618BD /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05DB24DBDB40008618BD /* libxml2.tbd */; };
+		A54B05DE24DBDB49008618BD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B05DD24DBDB49008618BD /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A54B05D024DBDA56008618BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A54B05CF24DBDA56008618BD /* DaumMap.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A5492A4B24DEA0BD00222944 /* kakaoMapAPITest-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "kakaoMapAPITest-master"; path = "../../../../Downloads/kakaoMapAPITest-master"; sourceTree = "<group>"; };
+		A5492A4C24DEA15000222944 /* DaumMap */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = DaumMap; path = "../../../../Downloads/kakaoMapAPITest-master/DaumMap.embeddedframework/DaumMap.framework/DaumMap"; sourceTree = "<group>"; };
+		A54B05AE24DBD9C9008618BD /* sibals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sibals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54B05B124DBD9C9008618BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A54B05B324DBD9C9008618BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A54B05B524DBD9C9008618BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A54B05B824DBD9C9008618BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A54B05BA24DBD9CA008618BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A54B05BD24DBD9CA008618BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A54B05BF24DBD9CA008618BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54B05CA24DBDA49008618BD /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
+		A54B05CD24DBDA56008618BD /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
+		A54B05D124DBDB11008618BD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A54B05D324DBDB18008618BD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A54B05D524DBDB20008618BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A54B05D724DBDB28008618BD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A54B05D924DBDB36008618BD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A54B05DB24DBDB40008618BD /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		A54B05DD24DBDB49008618BD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A54B05E124DBDF73008618BD /* BridingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridingHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A54B05AB24DBD9C9008618BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54B05DE24DBDB49008618BD /* libsqlite3.tbd in Frameworks */,
+				A54B05DC24DBDB40008618BD /* libxml2.tbd in Frameworks */,
+				A54B05DA24DBDB36008618BD /* libc++.tbd in Frameworks */,
+				A54B05D824DBDB28008618BD /* QuartzCore.framework in Frameworks */,
+				A54B05D624DBDB20008618BD /* CoreLocation.framework in Frameworks */,
+				A54B05D424DBDB18008618BD /* SystemConfiguration.framework in Frameworks */,
+				A54B05D224DBDB11008618BD /* OpenGLES.framework in Frameworks */,
+				A54B05CE24DBDA56008618BD /* DaumMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A54B05A524DBD9C9008618BD = {
+			isa = PBXGroup;
+			children = (
+				A54B05CA24DBDA49008618BD /* DaumMap.embeddedframework */,
+				A54B05B024DBD9C9008618BD /* sibals */,
+				A54B05AF24DBD9C9008618BD /* Products */,
+				A54B05CC24DBDA56008618BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A54B05AF24DBD9C9008618BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A54B05AE24DBD9C9008618BD /* sibals.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A54B05B024DBD9C9008618BD /* sibals */ = {
+			isa = PBXGroup;
+			children = (
+				A54B05E124DBDF73008618BD /* BridingHeader.h */,
+				A54B05B124DBD9C9008618BD /* AppDelegate.swift */,
+				A54B05B324DBD9C9008618BD /* SceneDelegate.swift */,
+				A54B05B524DBD9C9008618BD /* ViewController.swift */,
+				A54B05B724DBD9C9008618BD /* Main.storyboard */,
+				A54B05BA24DBD9CA008618BD /* Assets.xcassets */,
+				A54B05BC24DBD9CA008618BD /* LaunchScreen.storyboard */,
+				A54B05BF24DBD9CA008618BD /* Info.plist */,
+			);
+			path = sibals;
+			sourceTree = "<group>";
+		};
+		A54B05CC24DBDA56008618BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5492A4C24DEA15000222944 /* DaumMap */,
+				A5492A4B24DEA0BD00222944 /* kakaoMapAPITest-master */,
+				A54B05DD24DBDB49008618BD /* libsqlite3.tbd */,
+				A54B05DB24DBDB40008618BD /* libxml2.tbd */,
+				A54B05D924DBDB36008618BD /* libc++.tbd */,
+				A54B05D724DBDB28008618BD /* QuartzCore.framework */,
+				A54B05D524DBDB20008618BD /* CoreLocation.framework */,
+				A54B05D324DBDB18008618BD /* SystemConfiguration.framework */,
+				A54B05D124DBDB11008618BD /* OpenGLES.framework */,
+				A54B05CD24DBDA56008618BD /* DaumMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A54B05AD24DBD9C9008618BD /* sibals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54B05C224DBD9CA008618BD /* Build configuration list for PBXNativeTarget "sibals" */;
+			buildPhases = (
+				A54B05AA24DBD9C9008618BD /* Sources */,
+				A54B05AB24DBD9C9008618BD /* Frameworks */,
+				A54B05AC24DBD9C9008618BD /* Resources */,
+				A54B05D024DBDA56008618BD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sibals;
+			productName = sibals;
+			productReference = A54B05AE24DBD9C9008618BD /* sibals.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A54B05A624DBD9C9008618BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "yujin son";
+				TargetAttributes = {
+					A54B05AD24DBD9C9008618BD = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A54B05A924DBD9C9008618BD /* Build configuration list for PBXProject "sibals" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A54B05A524DBD9C9008618BD;
+			productRefGroup = A54B05AF24DBD9C9008618BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A54B05AD24DBD9C9008618BD /* sibals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A54B05AC24DBD9C9008618BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54B05CB24DBDA49008618BD /* DaumMap.embeddedframework in Resources */,
+				A54B05BE24DBD9CA008618BD /* LaunchScreen.storyboard in Resources */,
+				A54B05BB24DBD9CA008618BD /* Assets.xcassets in Resources */,
+				A54B05B924DBD9C9008618BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A54B05AA24DBD9C9008618BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54B05B624DBD9C9008618BD /* ViewController.swift in Sources */,
+				A54B05B224DBD9C9008618BD /* AppDelegate.swift in Sources */,
+				A54B05B424DBD9C9008618BD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A54B05B724DBD9C9008618BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54B05B824DBD9C9008618BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A54B05BC24DBD9CA008618BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54B05BD24DBD9CA008618BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A54B05C024DBD9CA008618BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A54B05C124DBD9CA008618BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A54B05C324DBD9CA008618BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
+				INFOPLIST_FILE = sibals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yujin-son.sibals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/yujinson/Desktop/ios/8day/sibals/BridingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A54B05C424DBD9CA008618BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
+				INFOPLIST_FILE = sibals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yujin-son.sibals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/yujinson/Desktop/ios/8day/sibals/BridingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A54B05A924DBD9C9008618BD /* Build configuration list for PBXProject "sibals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54B05C024DBD9CA008618BD /* Debug */,
+				A54B05C124DBD9CA008618BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54B05C224DBD9CA008618BD /* Build configuration list for PBXNativeTarget "sibals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54B05C324DBD9CA008618BD /* Debug */,
+				A54B05C424DBD9CA008618BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A54B05A624DBD9C9008618BD /* Project object */;
+}
