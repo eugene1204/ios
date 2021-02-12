@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="AppleMusicStApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-44-zw3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CGU-00-oGl">
+                                    <size key="itemSize" width="180" height="240"/>
+                                    <size key="headerReferenceSize" width="414" height="296"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrackCollecionViewCell" id="fJW-h7-rHJ" customClass="TrackCollecionViewCell" customModule="AppleMusicStApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="316" width="180" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rch-1p-gvv">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oc2-5C-nfT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beach House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0m-Kl-UeI">
+                                                    <rect key="frame" x="0.0" y="180" width="180" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ty Dollar Sign" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdg-U7-ANv">
+                                                    <rect key="frame" x="0.0" y="205" width="100" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="trackArtist" destination="i0m-Kl-UeI" id="3dD-jU-eE0"/>
+                                            <outlet property="trackThumbnail" destination="oc2-5C-nfT" id="2Um-jw-9qd"/>
+                                            <outlet property="trackTitle" destination="Kdg-U7-ANv" id="CSA-ng-IcV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrackCollectionHeaderView" id="C70-43-mT9" customClass="TrackCollectionHeaderView" customModule="AppleMusicStApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Pick!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0E-LW-oMZ">
+                                            <rect key="frame" x="20" y="30" width="184" height="36"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mLM-FE-gXR">
+                                            <rect key="frame" x="33" y="77" width="351" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="ddO-7c-NtC"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY NOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZq-BL-y0Y">
+                                            <rect key="frame" x="43" y="221.5" width="75" height="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwE-zj-S7J">
+                                            <rect key="frame" x="43" y="238.5" width="291" height="33.5"/>
+                                            <string key="text">PLAY NOW
+Today's pick is silo albumDDD - .</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GIB-aB-atA">
+                                            <rect key="frame" x="340" y="241" width="35" height="29"/>
+                                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-1O-Ief">
+                                            <rect key="frame" x="33" y="77" width="351" height="200"/>
+                                            <connections>
+                                                <action selector="cardTapped:" destination="C70-43-mT9" eventType="touchUpInside" id="Tl8-Tu-KMb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mLM-FE-gXR" firstAttribute="leading" secondItem="C70-43-mT9" secondAttribute="leading" constant="33" id="2ge-jc-Pcj"/>
+                                        <constraint firstItem="dqb-1O-Ief" firstAttribute="bottom" secondItem="mLM-FE-gXR" secondAttribute="bottom" id="46Q-im-eqa"/>
+                                        <constraint firstItem="dqb-1O-Ief" firstAttribute="leading" secondItem="mLM-FE-gXR" secondAttribute="leading" id="76f-Fb-GKC"/>
+                                        <constraint firstItem="xwE-zj-S7J" firstAttribute="top" secondItem="hZq-BL-y0Y" secondAttribute="bottom" id="ABV-a8-GpZ"/>
+                                        <constraint firstItem="Y0E-LW-oMZ" firstAttribute="leading" secondItem="C70-43-mT9" secondAttribute="leading" constant="20" id="FVR-QJ-WQf"/>
+                                        <constraint firstItem="xwE-zj-S7J" firstAttribute="trailing" secondItem="mLM-FE-gXR" secondAttribute="trailing" constant="-50" id="FmQ-Py-9gz"/>
+                                        <constraint firstItem="dqb-1O-Ief" firstAttribute="trailing" secondItem="mLM-FE-gXR" secondAttribute="trailing" id="KdV-Bn-bRV"/>
+                                        <constraint firstItem="xwE-zj-S7J" firstAttribute="leading" secondItem="mLM-FE-gXR" secondAttribute="leading" constant="10" id="Md5-DM-AhA"/>
+                                        <constraint firstItem="GIB-aB-atA" firstAttribute="bottom" secondItem="mLM-FE-gXR" secondAttribute="bottom" constant="-6" id="W9S-Rt-nRO"/>
+                                        <constraint firstItem="Y0E-LW-oMZ" firstAttribute="top" secondItem="C70-43-mT9" secondAttribute="top" constant="30" id="YbD-0C-SGJ"/>
+                                        <constraint firstItem="mLM-FE-gXR" firstAttribute="top" secondItem="Y0E-LW-oMZ" secondAttribute="bottom" constant="11" id="ZCZ-rS-uwT"/>
+                                        <constraint firstItem="xwE-zj-S7J" firstAttribute="bottom" secondItem="mLM-FE-gXR" secondAttribute="bottom" constant="-5" id="cdW-qM-sU1"/>
+                                        <constraint firstItem="hZq-BL-y0Y" firstAttribute="leading" secondItem="mLM-FE-gXR" secondAttribute="leading" constant="10" id="hQ0-Mj-i3i"/>
+                                        <constraint firstItem="dqb-1O-Ief" firstAttribute="top" secondItem="mLM-FE-gXR" secondAttribute="top" id="i8c-74-HKZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="mLM-FE-gXR" secondAttribute="trailing" constant="30" id="ol4-Lf-0vT"/>
+                                        <constraint firstItem="GIB-aB-atA" firstAttribute="trailing" secondItem="mLM-FE-gXR" secondAttribute="trailing" constant="-9" id="soA-Yc-DtE"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="descriptionLabel" destination="xwE-zj-S7J" id="EQ4-Eh-r3m"/>
+                                        <outlet property="thumbnailImageView" destination="mLM-FE-gXR" id="Ick-rF-ucz"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gpo-Wg-3md"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Fbh-63-eLd"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317.39130434782612" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

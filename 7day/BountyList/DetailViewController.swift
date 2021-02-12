@@ -23,6 +23,7 @@ class DetailViewController: UIViewController {
     // - DetailViewModel
     // > 뷰레이어에서 필요한 메서드 만들기
     // > 모델 가지고 있기, BountyInfo들...
+    
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bountyLabel: UILabel!

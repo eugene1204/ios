@@ -12,16 +12,16 @@ class BountyViewController: UIViewController,UITableViewDataSource, UITableViewD
     // MVVM
     
     // Model
-    // - BountyInfo
+    // - BountyInfo : nameList, bountyList
     // > BountInfo 만들기
     
     // View
-    // - ListCell
+    // - ListCell : 현상금 정보를 보여준다.
     // > ListCell 필요한 정보를 ViewModel한테서 받아야겠다
     // > ListCell은 ViewModel로 부터 받은 정보로 뷰 업데이트하기
     
     // ViewModel
-    // - BountyVIewModel
+    // - BountyViewModel
     // > BountyViewModel을 만들고, 뷰레이어에서 필요한 메서드 만들기
     // > 모델 가지고 있기, BountyInfo들...
   
